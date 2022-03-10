@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim Miner Resume</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script>
+        var clickCounter = 0;
+
+        function onClick() {
+            clickCounter += 1;
+            document.getElementById("clicksCounted").innerHTML = clickCounter;
+
+            if(clickCounter >= 20) {
+            alert("You have better things to do!!!!!");
+            }
+        };
+
+
+    </script>
+</head>
+<body>
+<H1><u>Tim Miner</u></H1>
+<section>
+    <div class="contact">
+        <p id="phone">Phone: 651-728-0396</p>
+        <p id="email">Email: Mnheat.Miner@gmail.com</p>
+        <a href="www.youtube.com" id="website">Website TBD</a>
+    </div>
+</section>
+<p id="header"><b><u>Bio</u></b></p>
+<p>My goal is to use both my current programming experience, along with learning new skills which will help me begin my
+    career as a developer. </p>
+
+<H2 class="header">Work Experience</H2>
+<hr>
+
+<div class="workPlace">
+    <p>Total Staffing Solutions: Owner </p>
+    <p class="date">2014 - 2022</p>
+</div>
+<div class="info">
+    <p>It is my goal to fulfill the hiring of CDL drivers for the companies I work with. Along with helping clients find
+        positions with which they can have long term success. </p>
+    <p>Responsibilities:</p>
+    <ul>
+        <li>Recruiting</li>
+        <li>New hire process/pre Employment processing</li>
+        <li>Hiring/Firing</li>
+        <li>Sales</li>
+        <li>Management</li>
+        <li>PayRoll</li>
+    </ul>
+</div>
+
+<div class="workPlace">
+    <p>Twin City Staffing: Recruiter </p>
+    <p class="date">2010 - 2014 </p>
+</div>
+<div class="info">
+    <p>Daily recruiting of potential new clients for open positions at over 50 different clients.</p>
+    <p>Responsibilities:</p>
+    <ul>
+        <li>Recruiting</li>
+        <li>New hire process/pre Employment processing</li>
+        <li>Interviews</li>
+        <li>Cold Calling</li>
+    </ul>
+</div>
+
+<div class="workPlace">
+    <p>Health and Rehab of New Brighton: Dietary Aid </p>
+    <p class="date">2008-2010</p>
+</div>
+<div class="info">
+    <p>Responsible for preparing the dining room. Serving, and cleaning up after the resident meal times, in a timely
+        manner. </p>
+</div>
+
+<div class="header">
+    <p>College and Computer Experience</p>
+</div>
+<hr>
+<div class="info">
+    <p>AA from Century Community College</p>
+    <p>Experience in the following subjects: </p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>RegEx</li>
+        <li>Java</li>
+        <li>MySQL</li>
+        <li>Python</li>
+    </ul>
+</div>
+<button onclick="onClick()">Does This even work???</button>
+<p>Number of clicks: <a id="clicksCounted">0</a></p>
+</body>
+</html>
