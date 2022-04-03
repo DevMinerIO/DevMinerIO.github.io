@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim Miner Resume</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
     <script>
         var clickCounter = 0;
 
@@ -11,90 +14,169 @@
             clickCounter += 1;
             document.getElementById("clicksCounted").innerHTML = clickCounter;
 
-            if(clickCounter >= 20) {
-            alert("You have better things to do!!!!!");
+            if (clickCounter >= 20) {
+                alert("You have better things to do!!!!!");
             }
         };
-
-
     </script>
 </head>
+
 <body>
-<H1><u>Tim Miner</u></H1>
-<section>
-    <div class="contact">
-        <p id="phone">Phone: 651-728-0396</p>
-        <p id="email">Email: Mnheat.Miner@gmail.com</p>
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" id="website">Website TBD</a>
+    <header>
+        <img class="logo" src="https://DevMinerIO.github.io/ResumeLogofinished.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Top of page</a></li>
+                <li><a href="#">Programming Experience</a></li>
+                <li><a href="#">JS Examples</a></li>
+            </ul>
+        </nav>
+        <button class="cta" onclick="location.href= 'https://youtube.com'">Contact</button>
+    </header>
+
+    <H1 id="resumeName"><u>Tim Miner</u></H1>
+
+    <p id="experience"><b><u>Bio</u></b></p>
+    <p class="info">My goal is to use both my current programming experience, along with learning new skills which will
+        help me take my hobby as a programmer into the profession of front end development. </p>
+
+    <H2 class="experience">Work Experience</H2>
+    <hr>
+
+    <div class="workPlace">
+        <p>Total Staffing Solutions: Owner </p>
+        <p class="date">2014 - 2022</p>
     </div>
-</section>
-<p id="header"><b><u>Bio</u></b></p>
-<p>My goal is to use both my current programming experience, along with learning new skills which will help me begin my
-    career as a developer. </p>
+    <div class="info">
+        <p>It is my goal to fulfill the hiring of CDL drivers for the companies I work with. Along with helping clients
+            find positions with which they can have long term success. </p>
+        <p>Responsibilities:</p>
+        <ul>
+            <li>Recruiting</li>
+            <li>New hire process/pre Employment processing</li>
+            <li>Hiring/Firing</li>
+            <li>Sales</li>
+            <li>Management</li>
+            <li>PayRoll</li>
+        </ul>
+    </div>
 
-<H2 class="header">Work Experience</H2>
-<hr>
+    <div class="workPlace">
+        <p>Twin City Staffing: Recruiter </p>
+        <p class="date">2010 - 2014 </p>
+    </div>
+    <div class="info">
+        <p>Daily recruiting of potential new clients for open positions at over 50 different clients.</p>
+        <p>Responsibilities:</p>
+        <ul>
+            <li>Recruiting</li>
+            <li>New hire process/pre Employment processing</li>
+            <li>Interviews</li>
+            <li>Cold Calling</li>
+        </ul>
+    </div>
 
-<div class="workPlace">
-    <p>Total Staffing Solutions: Owner </p>
-    <p class="date">2014 - 2022</p>
-</div>
-<div class="info">
-    <p>It is my goal to fulfill the hiring of CDL drivers for the companies I work with. Along with helping clients find
-        positions with which they can have long term success. </p>
-    <p>Responsibilities:</p>
-    <ul>
-        <li>Recruiting</li>
-        <li>New hire process/pre Employment processing</li>
-        <li>Hiring/Firing</li>
-        <li>Sales</li>
-        <li>Management</li>
-        <li>PayRoll</li>
-    </ul>
-</div>
+    <div class="workPlace">
+        <p>Health and Rehab of New Brighton: Dietary Aid </p>
+        <p class="date">2008-2010</p>
+    </div>
+    <div class="info">
+        <p>Responsible for preparing the dining room. Serving, and cleaning up after the resident meal times, in a
+            timely manner. </p>
+    </div>
 
-<div class="workPlace">
-    <p>Twin City Staffing: Recruiter </p>
-    <p class="date">2010 - 2014 </p>
-</div>
-<div class="info">
-    <p>Daily recruiting of potential new clients for open positions at over 50 different clients.</p>
-    <p>Responsibilities:</p>
-    <ul>
-        <li>Recruiting</li>
-        <li>New hire process/pre Employment processing</li>
-        <li>Interviews</li>
-        <li>Cold Calling</li>
-    </ul>
-</div>
-
-<div class="workPlace">
-    <p>Health and Rehab of New Brighton: Dietary Aid </p>
-    <p class="date">2008-2010</p>
-</div>
-<div class="info">
-    <p>Responsible for preparing the dining room. Serving, and cleaning up after the resident meal times, in a timely
-        manner. </p>
-</div>
-
-<div class="header">
-    <p>College and Computer Experience</p>
-</div>
-<hr>
-<div class="info">
-    <p>AA from Century Community College</p>
-    <p>Experience in the following subjects: </p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>RegEx</li>
-        <li>Java</li>
-        <li>MySQL</li>
-        <li>Python</li>
-    </ul>
-</div>
-<button onclick="onClick()">Does This even work???</button>
-<p>Number of clicks: <a id="clicksCounted">0</a></p>
+    <div class="header">
+        <p class="experience">College and Computer Experience</p>
+    </div>
+    <hr>
+    <div class="info">
+        <p class="header">AA from Century Community College</p>
+        <p class="header">Experience in the following subjects: </p>
+        <ul>
+            <li class="programmingExperience">HTML</li>
+            <ul>
+                <li>knoweldge and experience of how to look up documentation relating to scope of a project and
+                    problems encountered.
+                </li>
+                <li>Intermediate knoweldge of HTML and how to create basic websites.</li>
+                <li>Experience with: Forms, Tables, Inline CSS and Inline JS </li>
+                <li>School projects included: mock websites for restaurants and basketball businesses.
+                    Form creation and table creation similar to tv guides,</li>
+            </ul><br />
+            <li class="programmingExperience">CSS</li>
+            <ul>
+                <li>Experience with creating style sheets with both inline and external sheets. Including knoweldge of
+                    CSS selctors, Animations, transitions, inheritance. Also basic design/ ui / ux philosophy.
+                </li>
+                <li>Extensive reading on the psychology behind the user experience. Such as what makes websites feel
+                    responsive, human attention span, tricks used to keep users attention (similar to how its done at
+                    casinos), and potential issues regular site users may have if too many things are changed.
+                    Disrupting their neural pathways
+                </li>
+            </ul><br />
+            <li class="programmingExperience">JavaScript</li>
+            <ul>
+                <li>Experience with variables, concatenation, operators / comparison operators, booleans, if/else,
+                    loops(for, while), switch statements, arrays, object creation and functions. Both from inline
+                    scripts and external files.</li>
+                <li>Extensive work with JavaScript logic in order to implement working functions </li>
+            </ul><br />
+            <li class="programmingExperience">DOM</li>
+            <ul>
+                <li>Basic DOM experience with project implementation in the following areas:
+                    onclick events, console, hover, alerts, read tag, write tag and get tag.</li>
+            </ul><br />
+            <li class="programmingExperience">RegEx</li>
+            <ul>
+                <li>Basic RegEx experience from chellenges where you had to match a list of substrings
+                    while skipping other similar substrings. Very little project expereince with RegEx.</li>
+            </ul><br />
+            <li class="programmingExperience">Java</li>
+            <ul>
+                <li>This is where most of my programming experience comes from. Experience with variables, Booleans,
+                    switch statements, loops(for, while, doWhile), if/else, Scanner/User input, arrays, arrayLists and
+                    methods. Beginner expereince with linkedlists, hashMaps,and lambda's. along with debugging, UML
+                    Diagrams, and implementing checks to ensure proper userinputs.</li>
+                <li>In depth OOP. Object creation and inheritance with object properties.</li>
+                <li>Some experience with the MVC model and loosely coupling programs. Including privacy modifiers to
+                    keep important elements hidden from the user.
+                    from the user.</li>
+            </ul><br />
+            <li class="programmingExperience">Java projects I have completed:</li>
+            <ul>
+                <li>Rock paper scissors. Included checks to ensure expected answers, and the option to play vs a
+                    "computer"(randomly generated answer) or antoher user. Along with the ability to pick how many times
+                    you wanted to play, and a counter to keep track of wins.
+                </li>
+                <li>
+                    Movie database: this was my first implementation of CRUD (Create, Read, Update, Delete). Implemented
+                    methods to allow the user to look up movie objects based on title. Add a new movie if the title was
+                    not already in the array of movies. along with updating and deleting movies.
+                </li>
+                <li>Vending machine app which kept track of inventory in the machine and how much money the user put in.
+                    Then did specific checks to see if there was enough money to purchase the item the user wanted and
+                    if there was enough inventory/stock to dispense the item. Then would update the user money, and
+                    inventory. This was the largest debugging program I have have done. having multipul items in the
+                    inventory and
+                    many different outcomes possible.
+                </li>
+            </ul><br />
+            <li class="programmingExperience">MySQL</li>
+            <ul>
+                <li>Basic MySQL experience. Creation of simple databases and use of JOIN, SELECT, WHERE, And/OR/Not.
+                    Along with the ability to create a proper UML diagram. </li>
+            </ul><br />
+            <li class="programmingExperience">Python</li>
+            <ul>
+                <li>Beginner level python experience. Mostly with "Turtle Drawing" in order to recreate drawings.
+                    This included getting used to general programming logic, use of loops and functions in order to
+                    reduce and reuse code.
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <button onclick="onClick()">Alert on 20 clicks and each after</button>
+    <p>Number of clicks: <a id="clicksCounted">0</a></p>
 </body>
+
 </html>

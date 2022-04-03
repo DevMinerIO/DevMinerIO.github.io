@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="contactNote">Please be aware, all information is required, except for the comments box</h1>
+    <form action="https://formsubmit.co/mnheat.miner@gmail.com" method="POST">
+        <div class="statement">
+            <fieldset style="display: inline-block;">
+                <legend>Company Info:</legend>
+                <label for="company_Name">Company name: </label>
+                <input type="text" name="company_name" id="company_Name" required><br />
+                <br />
+                <label for="position">Position Title: </label>
+                <input type="text" name="position" id="position" placeholder="Front end dev" required><br />
+            </fieldset>
+            <br />
+
+            <fieldset style="display: inline-block;">
+                <legend>Contact Info</legend>
+                <label for="name">Your Name: </label>
+                <input type="text" name="name" id="name" size="28" required> <br /><br />
+                <label for="phone">Phone Number: </label>
+                <input type="tel" name="phone" id="phone" size="8" placeholder="xxx-xxx-xxxx"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br />
+                <br />
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" size="33"><br /><br />
+            </fieldset>
+            <br />
+            <fieldset style="display: inline-block;">
+                <label for="recruiter">Are you a staffing or recruiting company:</label>
+                <input type="radio" name="recruiter" id="Yes" value="yes">
+                <label>Yes</label>
+                <input type="radio" name="recruiter" id="No" value="No">
+                <label>No</label>
+            </fieldset>
+            <br />
+            <fieldset style="display: inline-block;">
+                <legend>Preferred Communication Type</legend>
+                <input type="checkbox" id="email_box" name="communication_method" value="Email">
+                <label for="email_box">Email</label><br />
+                <input type="checkbox" id="phone_box" name="communication_method" value="Phone">
+                <label for="phone_box">Phone</label>
+            </fieldset>
+            <br />
+            <fieldset style="display: inline-block;">
+                <label>Other Comments: </label>
+                <textarea name="comment" id="comment" cols="70" rows="3">
+                Please list additional info or comments here
+            </textarea>
+            </fieldset> <br /><br />
+        </div>
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="https://DevMinerIO.github.io/ResumeLogofinished.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Top of page</a></li>
+                <li><a href="#">Programming Experience</a></li>
+                <li><a href="#">JS Examples</a></li>
+            </ul>
+        </nav>
+        <button class="cta" onclick="location.href= 'https://youtube.com'">Contact</button>
+    </header>
+    <h2 id="welcome"></h2>
+
+    <!-- Name Input -->
+    <label for="nameInput" class="statement">Enter your name: </label> <br>
+    <input type="text" id="nameInput">
+    <button type="button" id="nameButton">Submit</button><br><br>
+
+    <!-- Sum of numbers Input -->
+    <label for="numberGame" class="statement">Please input 4 numbers between -100 and 100 (or keep the default values):
+    </label>
+    <input type="number" id="numberOne" name="numberOne" min="-100" max="100" value="12">
+    <input type="number" id="numberTwo" name="numberTwo" min="-100" max="100" value="-2">
+    <input type="number" id="numberThree" name="numberThree" min="-100" max="100" value="13">
+    <input type="number" id="numberFour" name="numberFour" min="-100" max="100" value="99">
+    <button type="button" id="numberGameButton" onclick="doMath()">Submit Numbers</button>
+    <br /><br />
+    <div class="statement">
+        <p>Sum of the 4 numbers is: <span id="sum"></span></p><br />
+        <p>Total number of Evens from 0 to sum is: <span class="answer" id="evenCounter"></span></p><br />
+        <p>Total number of odds from 0 to sum is: <span class="answer" id="oddCounter"></span></p><br />
+        <p>Average of the 4 numbers is: <span class="answer" id="average"></span></p><br />
+        <p>The Minimum of the 4 numbers is: <span class="answer" id="min"></span></p><br />
+        <p>Max number of the 4 numbers is: <span class="answer" id="max"></span></p>
+    </div>
+
+
+
+
+    <script src="app.js">
+    </script>
+</body>
+
+</html>

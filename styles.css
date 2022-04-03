@@ -1,0 +1,198 @@
+* {
+  background-color: #2F3335;
+  font-family: arial, helvetica, sans-serif;
+}
+
+
+body {
+  overflow-x: hidden;
+  /* background-image: url("https://cdn.pixabay.com/photo/2017/08/30/09/07/pattern-2696389_960_720.jpg"); */
+}
+
+#resumeName {
+  color: #F8F8FF;
+  font-size: 36px;
+  text-align: center;
+  margin: auto;
+  width: 190px;
+}
+
+#resumeName:hover {
+  animation: spin 3s ease-in both;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0.turn) color white;
+  }
+
+  to {
+    transform: rotate(1.0turn);
+    color: red;
+  }
+}
+
+#contactNote {
+  color: #F8F8FF;
+  font-size: 36px;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav_links {
+  list-style: none;
+  color: #D9DFE2;
+}
+
+a:link {
+  color: #D9DFE2;
+}
+
+a:visited {
+  color: #ACB8BE;
+  font-weight: lighter;
+}
+
+.programmingExperience {
+  list-style: none;
+}
+
+.nav_links li,
+.cta {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #D9DFE2;
+  text-decoration: none;
+}
+
+.nav_links li a {
+  transition: all .3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #90EE90;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(144, 238, 144, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(144, 238, 144, .5);
+}
+
+.logo {
+  margin-right: auto;
+}
+
+#email {
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+  font-weight: bold;
+  transition-property: font-size;
+  transition-duration: 2s;
+}
+
+#email:hover {
+  font-size: 36px;
+}
+
+#website {
+  display: inline-block;
+  text-align: right;
+  width: 31%;
+  font-weight: bold;
+  transition-property: font-size;
+  transition-duration: 2s;
+}
+
+#website:hover {
+  font-size: 36px;
+}
+
+#experience {
+  font-size: 24px;
+  color: #F8F8FF;
+}
+
+.experience {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F8F8FF;
+}
+
+hr {
+  border: 2px solid black;
+  border-color: #90EE90;
+}
+
+.workPlace p {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  color: #F8F8FF;
+}
+
+.date {
+  padding-left: 40px;
+  font-style: italic;
+}
+
+.info {
+  color: #C0C0C9;
+  font-weight: lighter;
+}
+
+div.contact {
+  border-radius: 20px;
+  background: #5F9EA0;
+  width: 100%;
+  height: 100%;
+}
+
+#phone {
+  padding-left: 10px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel] {
+  background-color: #D9DFE2;
+}
+
+.answer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F8F8FF;
+}
+
+.statement,
+#comment {
+  font-size: 15px;
+  font-weight: normal;
+  color: #F8F8FF;
+}
+
+#welcome {
+  font-size: 30px;
+  color: #F8F8FF;
+}
